@@ -310,4 +310,94 @@ template {
  */
 [hidden] {
   display: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Overpass", serif;
+  font-weight: 500;
+  color: #333;
+}
+
+#headerWrapper {
+  background-color: #abc;
+  color: #001adb;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem, 16px;
+  gap: 8px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#navWrapper {
+  background-color: #D92525;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  flex: 1;
+}
+nav li.active {
+  background-color: red;
+}
+nav a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #123;
+}
+
+#footerWrapper {
+  background-color: #044040;
+}
+
+footer {
+  padding: 0.5rem 16px;
+}
+footer p {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 35rem) {
+  header {
+    padding: 2rem 16px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+  }
+}
